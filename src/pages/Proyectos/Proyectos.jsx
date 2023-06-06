@@ -3,8 +3,8 @@ import imgchat from "../../assets/img/chatonline2.jpg"
 import pato from "../../assets/img/descripcion.jpg"
 import agenda from "../../assets/img/agenda.avif"
 import pokemon from "../../assets/img/pokemon.png"
-import luzup from "../../assets/img/LUZUP_ICON.png"
 import bjj from "../../assets/img/BJJ.png"
+import priv from "../../assets/img/private.png"
 import {BiCode} from "react-icons/bi"
 
 const Proyectos = () => {
@@ -52,19 +52,19 @@ const Proyectos = () => {
         </div>
 
         {/* EVOLUTICA  */}
-        {/* <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap" style={{backgroundColor:"#030303e6"}}>
-            <img src={luzup}  class="img-fluid3" alt=""/>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap" style={{backgroundColor:"#0303037f"}}>
+            <img src={priv}  class="img-fluid3" alt=""/>
             <div class="portfolio-info">
-              <h4>Luz UP</h4>
-              <p> <b> Evolutica Fintech</b></p>
+              <h4>Evolutica Fintech</h4>
+              <p> <b> Privado</b></p>
               <p><i>Tecnologias:</i> Storybook, React ,Sass</p>
               <div class="portfolio-links">
                 <a style={{cursor:"not-allowed"}} data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a> 
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* CHAT ONLINE  */}
 
