@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" class="about" style={{marginBottom:"100px"}}>
+    <section id="about" className="about" >
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Sobre mi / About</h2>

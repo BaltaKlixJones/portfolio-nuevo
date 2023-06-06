@@ -19,7 +19,8 @@ const Service = () => {
               <p>Experiencia en el desarrollo de aplicaciones web completas, tanto en el lado del cliente como en el servidor.</p>
             </div>
           </div>
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+         
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-html5"></i></div>
               <h4><a href="">   Front-end Developer</a></h4>

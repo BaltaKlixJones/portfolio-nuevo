@@ -173,10 +173,10 @@ body {
     white-space: nowrap;
     transition: 0.3s;
   }
+  
   .navbar-scrolled {
     background: rgba(40, 58, 90, 0.9);
-  }  
- 
+  }
   
   .navbar a i,
   .navbar a:focus i {
@@ -209,63 +209,6 @@ body {
     background: #31a9e1;
   }
   
-  .navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 14px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-    border-radius: 4px;
-  }
-  
-  .navbar .dropdown ul li {
-    min-width: 200px;
-  }
-  
-  .navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 14px;
-    text-transform: none;
-    font-weight: 500;
-    color: #0c3c53;
-  }
-  
-  .navbar .dropdown ul a i {
-    font-size: 12px;
-  }
-  
-  .navbar .dropdown ul a:hover,
-  .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
-    color: #47b2e4;
-  }
-  
-  .navbar .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-  
-  .navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-  }
-  
-  .navbar .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-  }
-  
   @media (max-width: 1366px) {
     .navbar .dropdown .dropdown ul {
       left: -90%;
@@ -277,8 +220,8 @@ body {
   }
   
   /**
-  * Mobile Navigation 
-  */
+   * Mobile Navigation 
+   */
   .mobile-nav-toggle {
     color: #fff;
     font-size: 28px;
@@ -353,39 +296,6 @@ body {
     color: #37517e;
   }
   
-  .navbar-mobile .dropdown ul {
-    position: static;
-    display: none;
-    margin: 10px 20px;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 1;
-    visibility: visible;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  }
-  
-  .navbar-mobile .dropdown ul li {
-    min-width: 200px;
-  }
-  
-  .navbar-mobile .dropdown ul a {
-    padding: 10px 20px;
-  }
-  
-  .navbar-mobile .dropdown ul a i {
-    font-size: 12px;
-  }
-  
-  .navbar-mobile .dropdown ul a:hover,
-  .navbar-mobile .dropdown ul .active:hover,
-  .navbar-mobile .dropdown ul li:hover>a {
-    color: #47b2e4;
-  }
-  
-  .navbar-mobile .dropdown>.dropdown-active {
-    display: block;
-  }
   
   /*--------------------------------------------------------------
   # Hero Section
@@ -571,6 +481,10 @@ body {
   /*--------------------------------------------------------------
   # About Us
   --------------------------------------------------------------*/
+  .about .container {
+  margin-bottom:100px;
+  }
+
   .about .content h3 {
     font-weight: 600;
     font-size: 26px;
@@ -624,6 +538,14 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 768px) {
+    .about .container {
+      margin-bottom: 0;
+    }
+  }
+    
+  
   
   /*--------------------------------------------------------------
   # Why Us
@@ -757,6 +679,8 @@ body {
   /*--------------------------------------------------------------
   # Skills
   --------------------------------------------------------------*/
+
+  
   .skill {
     display: inline-block;
     margin-bottom: 25px;
@@ -764,6 +688,7 @@ body {
     align-items: center;
     margin-right: 30px;
   }
+
   .skills .content h3 {
     font-weight: 700;
     font-size: 32px;
@@ -791,39 +716,15 @@ body {
   }
   
   
-  .skills .progress {
-    height: 60px;
-    display: block;
-    background: none;
-    border-radius: 0;
-  }
+ 
+  @media screen and (max-width: 768px) {
+    .skills  {
+      margin-left: 10px;
+    }
   
-  .skills .progress .skill {
-    padding: 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #37517e;
+    
   }
-  
-  .skills .progress .skill .val {
-    float: right;
-    font-style: normal;
-  }
-  
-  .skills .progress-bar-wrap {
-    background: #e8edf5;
-    height: 10px;
-  }
-  
-  .skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: #4668a2;
-  }
+ 
   
   /*--------------------------------------------------------------
   # Services
@@ -1008,6 +909,26 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.portfolio .img-fluid2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: -60px;
+}
+.portfolio .img-fluid3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top:-63px;
+   transform:scale(0.7);
+}
+.portfolio .img-fluid4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top:-13px;
+  transform:scale(1.2)
+}
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
@@ -1044,7 +965,18 @@ body {
 }
   
   
-  
+  @media screen and (max-width: 768px) {
+    .portfolio .img-fluid2 {
+      margin-top: -30px;
+    }
+    .portfolio .img-fluid3 {
+      margin-top: -40px;
+    }
+    .portfolio .img-fluid4 {
+      margin-top: 21px;
+      transform:scale(1.2)
+    }
+  }
   
   
   /*--------------------------------------------------------------

@@ -22,7 +22,7 @@ const Proyectos = () => {
         {/* BJJ */}
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap"  style={{backgroundColor:"#030303e6"}}>
-            <img src={bjj} style={{marginTop:"-60px"}} class="img-fluid" alt=""/>
+            <img src={bjj}  class="img-fluid2" alt=""/>
             <div class="portfolio-info">
               <h4>App web de jiujitsu</h4>
               <p> <b>Plataforma de videos con suscripciones</b> </p>
@@ -55,7 +55,7 @@ const Proyectos = () => {
         {/* EVOLUTICA  */}
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap" style={{backgroundColor:"#030303e6"}}>
-            <img src={luzup} style={{marginTop:"-63px", transform:"scale(0.7)"}} class="img-fluid" alt=""/>
+            <img src={luzup}  class="img-fluid3" alt=""/>
             <div class="portfolio-info">
               <h4>Luz UP</h4>
               <p> <b> Evolutica Fintech</b></p>
@@ -72,11 +72,11 @@ const Proyectos = () => {
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app"  >
           <div class="portfolio-wrap">
-            <img src={imgchat} class="img-fluid" style={{marginTop:"-13px", transform:"scale(1.2)"}} alt=""/>
+            <img src={imgchat} class="img-fluid4"  alt=""/>
             <div class="portfolio-info">
-              <h4> <b>Chat Online</b> </h4>
-              <p>Plataforma de Chat Online </p>
-              <p><i>Tecnologias:</i> React, Redux, Register, Bootstrap </p>
+              <h4> Chat Online </h4>
+              <p><b>Plataforma de Chat Online </b></p>
+              <p><i>Tecnologias:</i> React, Bootstrap, API de ChatEngine </p>
               <div class="portfolio-links">
                 <a target='_blank' href="https://github.com/BaltaKlixJones/Chat-Online"   class="portfolio-lightbox" ><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
                 <a target='_blank' href="https://www.youtube.com/watch?v=zmqvqQR3mU4"  data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a>
