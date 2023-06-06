@@ -1,11 +1,12 @@
 import React from 'react'
 import img from "../../assets/img/cta-bg.jpg"
-import imgchat from "../../assets/img/webchat.avif"
+import imgchat from "../../assets/img/chatonline2.jpg"
 import pato from "../../assets/img/descripcion.jpg"
 import agenda from "../../assets/img/agenda.avif"
 import pokemon from "../../assets/img/pokemon.png"
 import luzup from "../../assets/img/LUZUP_ICON.png"
 import bjj from "../../assets/img/BJJ.png"
+import {BiCode} from "react-icons/bi"
 
 const Proyectos = () => {
   return (
@@ -14,32 +15,21 @@ const Proyectos = () => {
 
       <div class="section-title">
         <h2>Proyectos</h2>
-        <p>Mis trabajos</p>
+        <p>Una mirada a mi trayectoria: Experiencia laboral, logros y proyectos destacados</p>
       </div>
 
-      {/* <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div>
-      </div> */}
-
       <div class="row portfolio-container">
-
         {/* BJJ */}
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap"  style={{backgroundColor:"#030303e4"}}>
+          <div class="portfolio-wrap"  style={{backgroundColor:"#030303e6"}}>
             <img src={bjj} style={{marginTop:"-60px"}} class="img-fluid" alt=""/>
             <div class="portfolio-info">
               <h4>App web de jiujitsu</h4>
-              <p>Plataforma de videos con suscripciones</p>
+              <p> <b>Plataforma de videos con suscripciones</b> </p>
+              <p><i>Tecnologias: </i> Mercado Pago, Login, Register, Passport, React, Redux, Node, Express, PostreSQL </p>
               <div class="portfolio-links">
-                <a href={bjj} data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="cristobalvelasco.com" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                {/* <a href={bjj} data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a> */}
+                <a style={{cursor:"not-allowed"}}  data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -52,10 +42,11 @@ const Proyectos = () => {
             <img src={pato} class="img-fluid" alt=""/>
             <div class="portfolio-info">
               <h4>PATO Estimulación Temprana</h4>
-              <p>Proyecto para Centro de Estimulacion Temprana</p>
+              <p> <b> Proyecto para Centro de Estimulacion Temprana</b></p>
+              <p><i>Tecnologias:</i> React, Redux, Node, Express, PostreSQL </p>
               <div class="portfolio-links">
-                <a href={pato} data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a target="_blank" href="https://github.com/BaltaKlixJones/PATO-ET"  class="portfolio-lightbox" ><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
+                <a target="_blank" href="https://www.patoestimulaciontemprana.com/"  data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -67,10 +58,11 @@ const Proyectos = () => {
             <img src={luzup} style={{marginTop:"-63px", transform:"scale(0.7)"}} class="img-fluid" alt=""/>
             <div class="portfolio-info">
               <h4>Luz UP</h4>
-              <p>Evolutica Fintech</p>
+              <p> <b> Evolutica Fintech</b></p>
+              <p><i>Tecnologias:</i> Reservado </p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                {/* <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>*/}
+                <a style={{cursor:"not-allowed"}} data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a> 
               </div>
             </div>
           </div>
@@ -80,13 +72,14 @@ const Proyectos = () => {
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app"  >
           <div class="portfolio-wrap">
-            <img src={imgchat} class="img-fluid" style={{marginTop:"-50px"}}alt=""/>
+            <img src={imgchat} class="img-fluid" style={{marginTop:"-13px", transform:"scale(1.2)"}} alt=""/>
             <div class="portfolio-info">
-              <h4>Chat Online</h4>
+              <h4> <b>Chat Online</b> </h4>
               <p>Plataforma de Chat Online </p>
+              <p><i>Tecnologias:</i> React, Redux, Register, BootStrap </p>
               <div class="portfolio-links">
-                <a href={img} data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a target='_blank' href="https://github.com/BaltaKlixJones/Chat-Online"   class="portfolio-lightbox" ><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
+                <a target='_blank' href="https://www.youtube.com/watch?v=zmqvqQR3mU4"  data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -98,10 +91,11 @@ const Proyectos = () => {
             <img src={agenda} class="img-fluid" style= {{marginTop:"-60px"}}alt=""/>
             <div class="portfolio-info">
               <h4>Flex Agenda</h4>
-              <p>Agenda de turnos para profesionales</p>
+              <p> <b>Agenda de turnos para profesionales</b> </p>
+              <p> <i>Tecnologias:</i>  Mercado Pago, FireBase, Redux, Node, Express, PostreSQL </p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a target='_blank' href="https://github.com/AndresPM98/FlexAgenda"  class="portfolio-lightbox" ><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
+                <a target='_blank' href="https://flex-agenda.vercel.app/"  data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -112,10 +106,11 @@ const Proyectos = () => {
             <img src={pokemon} class="img-fluid" alt=""/>
             <div class="portfolio-info">
               <h4>Pokemón </h4>
-              <p>Uso de la API de pokemón</p>
+              <p> <b>Proyecto Individual</b> </p>
+              <p><i>Tecnologias:</i> React, Redux, Node, Express, PostreSQL, API de Pokemon </p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a target='_blank' href="https://github.com/BaltaKlixJones/PI-POKEMON" class="portfolio-lightbox"><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
+                {/* <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a> */}
               </div>
             </div>
           </div>
