@@ -83,11 +83,11 @@ onscroll(document, navbarlinksActive)
  */
 const scrollto = (el) => {
   let header = select('#header')
-  let offset = header.offsetHeight + 20
+  let offset = header.offsetHeight 
 
-  let elementPos = select(el).offsetTop - offset
+  let elementPos = select(el).offsetTop 
   window.scrollTo({
-    top: elementPos,
+    top: elementPos- offset,
     behavior: 'smooth'
   })
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,7 +13,7 @@ const NavBar = () => {
         const heroSectionHeight = heroSection.offsetHeight;
         const scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
-        const offset = 50; // Ajusta este valor para cambiar el punto de activación
+        const offset = 50;
 
         if (scrollTop >= heroSectionHeight - offset) {
           setIsScrolled(true);
@@ -27,17 +27,15 @@ const NavBar = () => {
       e.preventDefault();
       const target = e.target.getAttribute("href");
       const headerHeight = document.querySelector("#header").offsetHeight;
-      const offset = 20; // Ajuste de desplazamiento adicional
 
-      const elementPos =
-        document.querySelector(target).offsetTop - headerHeight - offset;
+      const element = document.querySelector(target);
+      const elementPosition = element.offsetTop - headerHeight + 25;
 
       window.scrollTo({
-        top: elementPos,
+        top: elementPosition,
         behavior: "smooth",
       });
 
-      // Cerrar la barra de navegación móvil
       const navbar = document.querySelector("#navbar");
       const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
       if (navbar && mobileNavToggle) {
@@ -45,6 +43,9 @@ const NavBar = () => {
         mobileNavToggle.classList.remove("bi-x");
         mobileNavToggle.classList.add("bi-list");
       }
+
+      window.history.pushState(null, "", target);
+      setActiveSection(target);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -63,7 +64,7 @@ const NavBar = () => {
   }, []);
 
   useEffect(() => {
-    const handleMobileNavToggle = (e) => {
+    const handleMobileNavToggle = () => {
       const navbar = document.querySelector("#navbar");
       const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
 
@@ -86,6 +87,43 @@ const NavBar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActiveSection(location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScrollSpy = () => {
+      const sections = document.querySelectorAll("section[id]");
+
+      sections.forEach((section) => {
+        const sectionId = "#" + section.id;
+        const sectionOffset = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          window.pageYOffset >= sectionOffset - 50 &&
+          window.pageYOffset < sectionOffset + sectionHeight - 50
+        ) {
+          setActiveSection(sectionId);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScrollSpy);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollSpy);
+    };
+  }, []);
+
   return (
     <>
       <div
@@ -94,48 +132,83 @@ const NavBar = () => {
       >
         <div className="container d-flex align-items-center">
           <h1 className="logo me-auto">
-            <a href="">Portfolio web Balta</a>
+            <a href="/#hero">Portfolio web Balta</a>
           </h1>
 
           <nav id="navbar" className="navbar">
             <ul>
-              <li className={activeSection === "hero" ? "active" : ""}>
-                <a className="nav-link scrollto" href="#hero">
+              <li>
+                <a
+                  className={`nav-link scrollto ${
+                    activeSection === "#hero" ? "active" : ""
+                  }`}
+                  href="#hero"
+                >
                   Inicio
                 </a>
               </li>
-              <li className={activeSection === "about" ? "active" : ""}>
-                <a className="nav-link scrollto" href="#about">
+              <li>
+                <a
+                  className={`nav-link scrollto ${
+                    activeSection === "#about" ? "active" : ""
+                  }`}
+                  href="#about"
+                >
                   Sobre mí
                 </a>
               </li>
-              <li className={activeSection === "skills" ? "active" : ""}>
-                <a className="nav-link scrollto" href="#skills">
+              <li>
+                <a
+                  className={`nav-link scrollto ${
+                    activeSection === "#skills" ? "active" : ""
+                  }`}
+                  href="#skills"
+                >
                   Tecnologías
                 </a>
               </li>
-              <li className={activeSection === "why-us" ? "active" : ""}>
-                <a className="nav-link scrollto" href="#why-us">
+              <li>
+                <a
+                  className={`nav-link scrollto ${
+                    activeSection === "#why-us" ? "active" : ""
+                  }`}
+                  href="#why-us"
+                >
                   Más
                 </a>
               </li>
-              <li className={activeSection === "services" ? "active" : ""}>
-                <a className="nav-link scrollto" href="#services">
+              <li>
+                <a
+                  className={`nav-link scrollto ${
+                    activeSection === "#services" ? "active" : ""
+                  }`}
+                  href="#services"
+                >
                   Experiencia
                 </a>
               </li>
-              <li className={activeSection === "portfolio" ? "active" : ""}>
-                <a className="nav-link scrollto" href="#portfolio">
+              <li>
+                <a
+                  className={`nav-link scrollto ${
+                    activeSection === "#portfolio" ? "active" : ""
+                  }`}
+                  href="#portfolio"
+                >
                   Proyectos
                 </a>
               </li>
-              <li className={activeSection === "contact" ? "active" : ""}>
-                <a className="nav-link scrollto" href="#contact">
+              <li>
+                <a
+                  className={`nav-link scrollto ${
+                    activeSection === "#contact" ? "active" : ""
+                  }`}
+                  href="#contact"
+                >
                   Contacto
                 </a>
               </li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+            <i className="bi mobile-nav-toggle bi-list"></i>
           </nav>
         </div>
       </div>
