@@ -41,7 +41,7 @@ const Proyectos = () => {
             <img src={pato} class="img-fluid" alt=""/>
             <div class="portfolio-info">
               <h4>PATO Estimulación Temprana</h4>
-              <p> <b> Proyecto para Centro de Estimulacion Temprana</b></p>
+              <p> <b>Centro de Estimulacion Temprana</b></p>
               <p><i>Tecnologias:</i> React, Redux, Node, Express, PostreSQL </p>
               <div class="portfolio-links">
                 <a target="_blank" href="https://github.com/BaltaKlixJones/PATO-ET"  class="portfolio-lightbox" ><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
