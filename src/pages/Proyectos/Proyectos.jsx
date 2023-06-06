@@ -1,5 +1,4 @@
 import React from 'react'
-import img from "../../assets/img/cta-bg.jpg"
 import imgchat from "../../assets/img/chatonline2.jpg"
 import pato from "../../assets/img/descripcion.jpg"
 import agenda from "../../assets/img/agenda.avif"
