@@ -11,7 +11,7 @@ import skills from "../../assets/img/fullstack.png"
 
 const Skills = () => {
   return (
-    <body>
+    <>
        <section id="skills" class="skills">
   <div class="container" data-aos="fade-up">
 
@@ -93,7 +93,7 @@ const Skills = () => {
   </div>
 </section>
         
-    </body>
+    </>
   )
 }
 

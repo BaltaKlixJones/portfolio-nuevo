@@ -56,8 +56,8 @@ const NavBar = () => {
 
   return (
     <>
-      <section id="header" className={`fixed-top ${isScrolled ? 'navbar-scrolled' : ''}`}>
-        <header class="container d-flex align-items-center">
+      <div id="header" className={`fixed-top ${isScrolled ? 'navbar-scrolled' : ''}`}>
+        <div class="container d-flex align-items-center">
           <h1 class="logo me-auto">
             <a href="">Portfolio web Balta</a>
           </h1>
@@ -122,11 +122,11 @@ const NavBar = () => {
               {/* <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> --> */}
             </ul>
             <i
-        className={`bi bi-list mobile-nav-toggle`}
+        className={`bi mobile-nav-toggle bi-list `}
       ></i>
           </nav>
-        </header>
-      </section>
+        </div>
+      </div>
     </>
   );
 };

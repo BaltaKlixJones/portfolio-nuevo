@@ -8,6 +8,7 @@
 import GLightbox from 'glightbox';
 import Swiper from 'swiper';
 import AOS from 'aos';
+// import "./src/assets/vendor/waypoints/noframework.waypoints.js";
 // import Waypoint from 'waypoints/lib/noframework.waypoints';
 import './src/assets/vendor/bootstrap/css/bootstrap.min.css';
 import "./src/assets/vendor/aos/aos.css";
@@ -64,7 +65,7 @@ const navbarlinksActive = () => {
     if (!navbarlink.hash) return
     let section = select(navbarlink.hash)
     if (!section) return
-    let sectionTop = section.offsetTop + 20 // Ajuste de desplazamiento adicional
+    let sectionTop = section.offsetTop // Ajuste de desplazamiento adicional
     let sectionBottom = sectionTop + section.offsetHeight
     if (position >= sectionTop && position <= sectionBottom) {
       navbarlink.classList.add('active')
