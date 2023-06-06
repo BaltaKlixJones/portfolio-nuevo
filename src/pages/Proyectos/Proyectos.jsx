@@ -59,7 +59,7 @@ const Proyectos = () => {
             <div class="portfolio-info">
               <h4>Luz UP</h4>
               <p> <b> Evolutica Fintech</b></p>
-              <p><i>Tecnologias:</i> Reservado </p>
+              <p><i>Tecnologias:</i> Storybook, React ,Sass</p>
               <div class="portfolio-links">
                 {/* <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>*/}
                 <a style={{cursor:"not-allowed"}} data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a> 
@@ -76,7 +76,7 @@ const Proyectos = () => {
             <div class="portfolio-info">
               <h4> <b>Chat Online</b> </h4>
               <p>Plataforma de Chat Online </p>
-              <p><i>Tecnologias:</i> React, Redux, Register, BootStrap </p>
+              <p><i>Tecnologias:</i> React, Redux, Register, Bootstrap </p>
               <div class="portfolio-links">
                 <a target='_blank' href="https://github.com/BaltaKlixJones/Chat-Online"   class="portfolio-lightbox" ><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
                 <a target='_blank' href="https://www.youtube.com/watch?v=zmqvqQR3mU4"  data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a>

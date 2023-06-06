@@ -9,7 +9,8 @@ import Skills from './pages/Skills/Skills'
 import Why from './pages/Why/Why'
 import Service from './pages/Service/Service'
 import Proyectos from './pages/Proyectos/Proyectos'
-
+import Contact from './pages/Contact/Contact'
+import Footer from './pages/Footer/Footer'
 function App() {
 
 
@@ -22,7 +23,10 @@ function App() {
       <Why />
       <Service />
       <Proyectos />
-      
+      <Contact />
+      {/* <div id="preloader"></div> */}
+      <Footer />
+    
     </>
   )
 }
