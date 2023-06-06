@@ -52,7 +52,7 @@ const Proyectos = () => {
         </div>
 
         {/* EVOLUTICA  */}
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        {/* <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap" style={{backgroundColor:"#030303e6"}}>
             <img src={luzup}  class="img-fluid3" alt=""/>
             <div class="portfolio-info">
@@ -60,12 +60,11 @@ const Proyectos = () => {
               <p> <b> Evolutica Fintech</b></p>
               <p><i>Tecnologias:</i> Storybook, React ,Sass</p>
               <div class="portfolio-links">
-                {/* <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>*/}
                 <a style={{cursor:"not-allowed"}} data-glightbox="type: external" class="portfolio-details-lightbox" ><i class="bx bx-link"></i></a> 
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* CHAT ONLINE  */}
 
