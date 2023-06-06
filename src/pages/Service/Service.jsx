@@ -39,7 +39,7 @@ const Service = () => {
             <div class="icon-box">
               <div class="icon"><i class="bx bx-server"></i></div>
               <h4><a href="">Database Management</a></h4>
-              <p>Diseño y gestión de bases de datos utilizando tecnologías como SQL</p>
+              <p>Diseño y gestión de bases de datos utilizando tecnologías SQL</p>
             </div>
           </div>
 

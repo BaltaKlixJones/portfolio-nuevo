@@ -7,6 +7,7 @@ import About from './pages/About/About'
 import Skills from './pages/Skills/Skills'
 import Why from './pages/Why/Why'
 import Service from './pages/Service/Service'
+import Proyectos from './pages/Proyectos/Proyectos'
 function App() {
 
 
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Why />
       <Service />
+      <Proyectos />
     </>
   )
 }
