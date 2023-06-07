@@ -50,7 +50,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="row">
+        <div className="row" data-aos="fade-right" data-aos-delay="200">
           <div className="col-lg-5 d-flex align-items-stretch">
             <div className="info" >
               <div className="address" style={{marginTop:"20px"}}>
@@ -100,8 +100,9 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form ref={form} onSubmit={sendEmail} className="php-email-form">
+          <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" >
+            <form ref={form} onSubmit={sendEmail} className="php-email-form" data-aos="fade-right"
+              data-aos-delay="100">
               <div className="row">
                 <div className="form-group col-md-6">
                   <label htmlFor="name"> Nombre y Apellido</label>

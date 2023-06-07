@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "../script"
 import './App.css'
 
@@ -11,24 +11,24 @@ import Service from './pages/Service/Service'
 import Proyectos from './pages/Proyectos/Proyectos'
 import Contact from './pages/Contact/Contact'
 import Footer from './pages/Footer/Footer'
-function App() {
+import Proeloader from './pages/Preloader/Proeloader'
 
+function App() {
 
   return (
     <>
+      
       <NavBar />
-      <Home />
+      <Home  />
       <About />
       <Skills />
       <Why />
       <Service />
       <Proyectos />
       <Contact />
-      {/* <div id="preloader"></div> */}
       <Footer />
-    
     </>
-  )
+  );
 }
 
-export default App
+export default App;
