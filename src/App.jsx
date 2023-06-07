@@ -14,10 +14,10 @@ import Footer from './pages/Footer/Footer'
 import Proeloader from './pages/Preloader/Proeloader'
 import { inject } from '@vercel/analytics'
 
-inject()
 
 function App() {
-
+  
+  inject()
 
   return (
     <>
