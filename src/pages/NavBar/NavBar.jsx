@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./NavBar.css";
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");

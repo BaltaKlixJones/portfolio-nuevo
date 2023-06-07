@@ -1,4 +1,5 @@
 import React from "react";
+import "./Skills.css";
 import { ImHtmlFive } from "react-icons/im";
 import { IoLogoCss3, IoLogoSass } from "react-icons/io";
 import { SiJavascript, SiRedux, SiExpress, SiStorybook } from "react-icons/si";
@@ -11,66 +12,66 @@ import skills from "../../assets/img/fullstack.png";
 const Skills = () => {
   return (
     <>
-      <section id="skills" class="skills">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
+      <section id="skills" className="skills">
+        <div className="container" data-aos="fade-up">
+          <div className="row">
             <div
-              class="col-lg-6 d-flex align-items-center"
+              className="col-lg-6 d-flex align-items-center"
               data-aos="fade-right"
               data-aos-delay="100"
             >
               <img
                 src={skills}
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
                 style={{ maxHeight: "600px", marginTop: "-70px" }}
               />
             </div>
             <div
-              class="col-lg-6 pt-4 pt-lg-0 content"
+              className="col-lg-6 pt-4 pt-lg-0 content"
               data-aos="fade-left"
               data-aos-delay="100"
             >
               <h3>Tecnologías / Skills</h3>
-              <p class="fst-italic">
+              <p className="fst-italic">
                 A lo largo de mis estudios he aprendido distintas habilidades
               </p>
 
-              <div class="skills-content">
-                <div class="skill">
+              <div className="skills-content">
+                <div className="skill">
                   <ImHtmlFive
-                    class="skill-icon"
+                    className="skill-icon"
                     size={60}
                     style={{ color: "orange" }}
                   />
 
-                  {/* <img src="assets/img/html-icon.png" alt="HTML Icon" class="skill-icon"/> */}
+                  {/* <img src="assets/img/html-icon.png" alt="HTML Icon" className="skill-icon"/> */}
                 </div>
 
-                <div class="skill">
+                <div className="skill">
                   <IoLogoCss3
-                    class="skill-icon mb-n2"
+                    className="skill-icon mb-n2"
                     size={70}
                     style={{ color: "blue" }}
                   />
                 </div>
 
-                <div class="skill">
+                <div className="skill">
                   <SiJavascript
-                    class="skill-icon"
+                    className="skill-icon"
                     size={55}
                     style={{ color: "#f6e20a" }}
                   />
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <FaReact
-                    class="skill-icon"
+                    className="skill-icon"
                     size={70}
                     style={{ color: "#61DBFB" }}
                   />
                 </div>
-                <div class="skill"></div>
-                <div class="skill">
+                <div className="skill"></div>
+                <div className="skill">
                   <SiRedux
                     className="skill-icon"
                     size={60}
@@ -78,47 +79,47 @@ const Skills = () => {
                   />
                 </div>
 
-                <div class="skill">
+                <div className="skill">
                   <DiNodejs
-                    class="skill-icon "
+                    className="skill-icon "
                     size={100}
                     style={{ color: "#3c873a" }}
                   />
                 </div>
-                <div class="skill">
-                  <SiExpress class="skill-icon " size={50} />
+                <div className="skill">
+                  <SiExpress className="skill-icon " size={50} />
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <BsGit
-                    class="skill-icon "
+                    className="skill-icon "
                     size={70}
                     style={{ color: "#f34f29" }}
                   />
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <DiPostgresql
-                    class="skill-icon "
+                    className="skill-icon "
                     size={75}
                     style={{ color: "#336791" }}
                   />
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <FaBootstrap
-                    class="skill-icon "
+                    className="skill-icon "
                     size={70}
                     style={{ color: "#563d7c" }}
                   />
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <IoLogoSass
-                    class="skill-icon "
+                    className="skill-icon "
                     size={70}
                     style={{ color: "#c69" }}
                   />
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <SiStorybook
-                    class="skill-icon "
+                    className="skill-icon "
                     size={70}
                     style={{ color: "#ff4785" }}
                   />

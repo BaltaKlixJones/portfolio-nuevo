@@ -1,0 +1,44 @@
+
+.skill {
+    display: inline-block;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .skills .content h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #37517e;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .skills .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills .content ul li {
+    padding-bottom: 10px;
+  }
+  
+  .skills .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #47b2e4;
+  }
+  
+  .skills .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+ 
+  @media screen and (max-width: 768px) {
+    .skills  {
+      margin-left: 10px;
+    }
+  
+    
+  }

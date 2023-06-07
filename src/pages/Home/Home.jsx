@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Home.css";
 import hero from "../../assets/img/hero-img.png";
 import About from "../About/About";
 import Skills from "../Skills/Skills";
@@ -37,7 +38,7 @@ const Home = () => {
                 <a
                   target="_blank"
                   href="https://docs.google.com/document/d/14T18Vn2qtzWxFXuKdhtrvHjFGTP24SeOpnSDN1JJOCU/edit#"
-                  class="btn-get-started scrollto"
+                  className="btn-get-started scrollto"
                 >
                   Ver Curriculum
                 </a>

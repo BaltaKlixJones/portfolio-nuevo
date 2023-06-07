@@ -1,13 +1,14 @@
 import React from 'react'
+import "./Footer.css"
 
 const Footer = () => {
   return (
     <footer id="footer">
-    <div class="container footer-bottom clearfix">
-    <div class="copyright">
+    <div className="container footer-bottom clearfix">
+    <div className="copyright">
     &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
     </div>
-    <div class="credits">
+    <div className="credits">
       {/* All the links in the footer should remain intact. 
        You can delete the links only if you purchased the pro version. 
        Licensing information: https://bootstrapmade.com/license/ 
