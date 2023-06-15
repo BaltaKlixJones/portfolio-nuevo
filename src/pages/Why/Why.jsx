@@ -36,7 +36,7 @@ const Why = () => {
               </a>
               <div id="accordion-list-2" className="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Como desarrollador Full Stack, tengo experiencia en una amplia gama de tecnologías. En el frontend, domino HTML, CSS y JavaScript, así como frameworks y librerías populares como React y Redux. En el backend, tengo experiencia con lenguajes como Node.js y Express. Además, estoy familiarizado con bases de datos relacionales como PostgreSQL.
+                  Como desarrollador Full Stack, tengo experiencia en una amplia gama de tecnologías. En el frontend, domino HTML, CSS y JavaScript, así como frameworks y librerías populares como React y Redux. En el backend, tengo experiencia con lenguajes como Node.js y Express. Además, estoy familiarizado con bases de datos relacionales como PostgreSQL y no relacionales como Mongodb.
                 </p>
               </div>
             </li>
@@ -48,7 +48,7 @@ const Why = () => {
               </a>
               <div id="accordion-list-3" className="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Sí, he trabajado en el despliegue de aplicaciones en la nube. Tengo experiencia con la plataforma de alojamiento web Hostinger, la cual he utilizado para alojar y gestionar aplicaciones web.
+                  Sí, he trabajado en el despliegue de aplicaciones en la nube. Tengo experiencia en plataformas de alojamiento web como Hostinger, Railway y  Vercel, las cuales he utilizado para alojar y gestionar aplicaciones web.
                 </p>
               </div>
             </li>
