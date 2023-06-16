@@ -5,7 +5,7 @@ import pato from "../../assets/img/descripcion.jpg"
 import agenda from "../../assets/img/agenda.avif"
 import bjj from "../../assets/img/BJJ.png"
 import priv from "../../assets/img/private.png"
-import taskManager from "../../assets/img/taskManager1.webp"
+import taskManager from "../../assets/img/taskmanager2.jpeg"
 import {BiCode} from "react-icons/bi"
 
 const Proyectos = () => {
@@ -74,7 +74,7 @@ const Proyectos = () => {
             <div className="portfolio-info">
               <h4>Task Manager </h4>
               <p> <b>Administrador de Tareas</b> </p>
-              <p><i>Tecnologias:</i> React, Node, Express, MongoDB, Tailwind </p>
+              <p><i>Tecnologias:</i> React, Node, Express, MongoDB, Tailwind, Login, Register </p>
               <div className="portfolio-links">
                 <a target='_blank' href="https://github.com/BaltaKlixJones/proyect-mern" className="portfolio-lightbox"><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
                 {/* <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" className="portfolio-details-lightbox" title="Portfolio Details"><i className="bx bx-link"></i></a> */}
