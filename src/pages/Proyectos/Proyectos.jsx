@@ -6,6 +6,7 @@ import agenda from "../../assets/img/agenda.avif"
 import pokemon from "../../assets/img/pokemon.png"
 import bjj from "../../assets/img/BJJ.png"
 import priv from "../../assets/img/private.png"
+import taskManager from "../../assets/img/taskManager3.png"
 import {BiCode} from "react-icons/bi"
 
 const Proyectos = () => {
@@ -66,6 +67,22 @@ const Proyectos = () => {
             </div>
           </div>
         </div>
+        
+        {/* TaskManager */}
+        <div className="col-lg-4 col-md-6 portfolio-item filter-card" >
+          <div className="portfolio-wrap"style={{height:"300px"}}>
+            <img src={taskManager} className="img-fluid5" alt=""/>
+            <div className="portfolio-info">
+              <h4>Task Manager </h4>
+              <p> <b>Administrador de Tareas</b> </p>
+              <p><i>Tecnologias:</i> React, Node, Express, MongoDB, Tailwind </p>
+              <div className="portfolio-links">
+                <a target='_blank' href="https://github.com/BaltaKlixJones/proyect-mern" className="portfolio-lightbox"><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
+                {/* <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" className="portfolio-details-lightbox" title="Portfolio Details"><i className="bx bx-link"></i></a> */}
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* CHAT ONLINE  */}
 
@@ -99,21 +116,7 @@ const Proyectos = () => {
             </div>
           </div>
         </div>
-{/* POKEMON */}
-        <div className="col-lg-4 col-md-6 portfolio-item filter-card" >
-          <div className="portfolio-wrap"style={{height:"300px"}}>
-            <img src={pokemon} className="img-fluid" alt=""/>
-            <div className="portfolio-info">
-              <h4>Pokemón </h4>
-              <p> <b>Proyecto Individual</b> </p>
-              <p><i>Tecnologias:</i> React, Redux, Node, Express, PostreSQL, API de Pokemon </p>
-              <div className="portfolio-links">
-                <a target='_blank' href="https://github.com/BaltaKlixJones/PI-POKEMON" className="portfolio-lightbox"><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
-                {/* <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" className="portfolio-details-lightbox" title="Portfolio Details"><i className="bx bx-link"></i></a> */}
-              </div>
-            </div>
-          </div>
-        </div>
+
 
       </div>
 
