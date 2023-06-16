@@ -3,10 +3,9 @@ import "./Proyectos.css"
 import imgchat from "../../assets/img/chatonline2.jpg"
 import pato from "../../assets/img/descripcion.jpg"
 import agenda from "../../assets/img/agenda.avif"
-import pokemon from "../../assets/img/pokemon.png"
 import bjj from "../../assets/img/BJJ.png"
 import priv from "../../assets/img/private.png"
-import taskManager from "../../assets/img/taskManager3.png"
+import taskManager from "../../assets/img/taskManager1.webp"
 import {BiCode} from "react-icons/bi"
 
 const Proyectos = () => {
