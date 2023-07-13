@@ -12,7 +12,7 @@ import {
   SiTrello,
   SiPostgresql,
   SiInsomnia,
-  SiDocker
+  SiDocker,
 } from "react-icons/si";
 import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
 
@@ -139,6 +139,7 @@ const Skills = () => {
                       />
                       <p className="p-skill">Mongo DB</p>
                     </div>
+
                     <div className="col-md-2 ">
                       <SiDocker
                         className="skill-icon "

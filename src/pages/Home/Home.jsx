@@ -3,7 +3,7 @@ import "./Home.css";
 import hero from "../../assets/img/hero-img.png";
 import About from "../About/About";
 import Skills from "../Skills/Skills";
-import cv from "../../assets/img/cv-full1.pdf";
+import cv from "../../assets/img/cv-full2.pdf";
 
 const Home = () => {
   const [fileDownload, setFileDownload] = useState(null);
