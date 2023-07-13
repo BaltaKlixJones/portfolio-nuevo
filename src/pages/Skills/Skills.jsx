@@ -12,6 +12,7 @@ import {
   SiTrello,
   SiPostgresql,
   SiInsomnia,
+  SiDocker
 } from "react-icons/si";
 import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
 
@@ -137,6 +138,14 @@ const Skills = () => {
                         style={{ color: "#4DB33D" }}
                       />
                       <p className="p-skill">Mongo DB</p>
+                    </div>
+                    <div className="col-md-2 ">
+                      <SiDocker
+                        className="skill-icon "
+                        size={70}
+                        style={{ color: "#0db7ed" }}
+                      />
+                      <p className="p-skill">Docker</p>
                     </div>
 
                     <div className="col-md-2 ">
