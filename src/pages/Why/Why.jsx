@@ -48,7 +48,7 @@ const Why = () => {
               </a>
               <div id="accordion-list-3" className="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Sí, he trabajado en el despliegue de aplicaciones en la nube. Tengo experiencia en plataformas de alojamiento web como Hostinger, Railway y  Vercel, las cuales he utilizado para alojar y gestionar aplicaciones web.
+                  Sí, he trabajado en el despliegue de aplicaciones en la nube. Tengo experiencia en plataformas de alojamiento web como Google Cloud, Hostinger, Railway y  Vercel, las cuales he utilizado para alojar y gestionar aplicaciones web.
                 </p>
               </div>
             </li>
