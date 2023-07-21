@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import hero from "../../assets/img/hero-img.png";
-import About from "../About/About";
-import Skills from "../Skills/Skills";
 import cv from "../../assets/img/cv-full2.pdf";
 
 const Home = () => {
