@@ -6,6 +6,7 @@ import agenda from "../../assets/img/agenda.avif"
 import bjj from "../../assets/img/BJJ.png"
 import priv from "../../assets/img/private.png"
 import taskManager from "../../assets/img/taskmanager2.jpeg"
+import inajet from "../../assets/img/inajet.png"
 import {BiCode} from "react-icons/bi"
 
 const Proyectos = () => {
@@ -70,14 +71,15 @@ const Proyectos = () => {
         {/* TaskManager */}
         <div className="col-lg-4 col-md-6 portfolio-item filter-card" >
           <div className="portfolio-wrap"style={{height:"300px"}}>
-            <img src={taskManager} className="img-fluid5" alt=""/>
+            <img src={inajet} className="img-fluid5" alt=""/>
             <div className="portfolio-info">
-              <h4>Task Manager </h4>
-              <p> <b>Administrador de Tareas</b> </p>
-              <p><i>Tecnologias:</i> React, Node, Express, MongoDB, Tailwind, Login, Register </p>
+              <h4>Inajet Aviation</h4>
+              <p> <b>Aplicación de consulta de viajes exclusivos</b> </p>
+              <p><i>Tecnologias:</i> React, Node, Express, PostrgresSQL, Redux </p>
               <div className="portfolio-links">
-                <a target='_blank' href="https://github.com/BaltaKlixJones/proyect-mern" className="portfolio-lightbox"><i > <BiCode style={{marginBottom:"8px"}}/></i></a>
-                {/* <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" className="portfolio-details-lightbox" title="Portfolio Details"><i className="bx bx-link"></i></a> */}
+              <div className="portfolio-links">
+                <a target="_blank" href="https://www.inajetaviation.com/"  data-glightbox="type: external" className="portfolio-details-lightbox" ><i className="bx bx-link"></i></a> 
+              </div>
               </div>
             </div>
           </div>

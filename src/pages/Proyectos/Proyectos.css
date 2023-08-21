@@ -145,9 +145,9 @@
   .portfolio .img-fluid5 {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
     margin-top: 0px;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
   }
   .portfolio .img-fluid4 {
     width: 100%;
